@@ -4,8 +4,14 @@ h1{
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#info{
+    display: flex;
+    justify-content: space-around;
+    color: dimgrey
 }
 
 #query{
@@ -36,6 +42,55 @@ body{
     height: 300px;
 }
 
+.submit{
+    font-size: x-large;
+}
+
 #b1{
     background-color: #CCAACC;
+}
+
+#b2{
+    background-color: #F8DE7E;
+}
+
+#b3{
+    background-color: #FAC898;
+}
+
+#b4{
+    background-color: #FFC0CB;
+}
+
+#b5{
+	background-color: #E3735E;
+}
+
+#b6{
+    background-color: 	#C1E1C1;
+}
+
+#b7{
+   background-color: #B6D0E2;
+}
+
+#b8{
+    background-color: #C0C0C0;
+}
+
+img{
+    width: 20%;
+    height: 20%;
+}
+
+.pic{
+    background-color: whitesmoke;
+    display:flex;
+    justify-content: space-around;
+}
+
+.place{
+    height: 21px;
+    background-color: whitesmoke;
+    text-align: center;
 }

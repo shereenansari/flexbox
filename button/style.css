@@ -1,0 +1,20 @@
+body{
+    background-color: pink;
+}
+
+#head{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+}
+
+#dis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.update {
+    background-color: darkseagreen;
+}
+

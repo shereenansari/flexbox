@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Beat Sequencer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="baseaudio" src="ScreenRecording_03-17-2025 20-48-06_1.mp3" preload="auto" loop></audio>
+    <audio id="drumaudio" src="ScreenRecording_03-17-2025 20-48-18_1.mp3" preload="auto" loop></audio>
+    <audio id="clapaudio" src="ScreenRecording_03-17-2025 20-48-28_1.mp3" preload="auto" loop></audio>
+    <audio id="bellaudio" src="ScreenRecording_03-17-2025 20-48-39_1.mp3" preload="auto" loop></audio>
+    
+    <div id="head">
+    <h1>Sheshe's Beat Sequencer</h1>
+    <h3 style="font-style: italic;">Press on any Instrument to Play/Pause</h3>
+    </div>
+
+    <div id="dis">
+    <button id="base"><img src="base.png"></button>
+    <button id="drum"><img src="drum.png"></button>
+    <button id="clap"><img src="clap.png"></button>
+    <button id="bell"><img src="bell.png"></button>
+    </div>
+
+
+    <script>
+        var basebutton = document.getElementById('base');
+        var playbase = document.getElementById('baseaudio');
+        basebutton.addEventListener('click', function() {
+            if (playbase.paused) {
+                playbase.play();
+                basebutton.classList.add('update');
+            } else {
+                playbase.pause();
+                basebutton.classList.remove('update');
+            }
+        });
+
+        var drumbutton = document.getElementById('drum');
+        var playdrum = document.getElementById('drumaudio');
+        drumbutton.addEventListener('click', function() {
+            if (playdrum.paused) {
+                playdrum.play();
+                drumbutton.classList.add('update');
+            } else {
+                playdrum.pause();
+                drumbutton.classList.remove('update');
+            }
+        });
+
+        var clapbutton = document.getElementById('clap');
+        var playclap = document.getElementById('clapaudio');
+        clapbutton.addEventListener('click', function() {
+            if (playclap.paused) {
+                playclap.play();
+                clapbutton.classList.add('update');
+            } else {
+                playclap.pause();
+                clapbutton.classList.remove('update');
+            }
+        });
+
+        var bellbutton = document.getElementById('bell');
+        var playbell = document.getElementById('bellaudio');
+        bellbutton.addEventListener('click', function() {
+            if (playbell.paused) {
+                playbell.play();
+                bellbutton.classList.add('update');
+            } else {
+                playbell.pause();
+                bellbutton.classList.remove('update');
+            }
+        });
+    </script>
+</body>
+</html>
